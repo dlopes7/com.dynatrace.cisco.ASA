@@ -1,0 +1,22 @@
+name: com.dynatrace.<device-family>.<device>
+version: 0.1.0
+minDynatraceVersion: "1.215.0"
+author:
+  name: <author>
+
+snmp:
+  - group: <device>-<device-family>
+    featureSet: basic
+    interval: 1m
+    dimensions:
+      - id: snmp.<extension-fqn>.<metric-id>
+        value: oid:<some-oid>
+    subgroups:
+      - subgroup: general
+        table: false
+        metrics:
+          - id: snmp.<extension-fqn>.<metric-id>
+            value: oid:<some-oid>
+            type: <type, example: count>
+#dashboards:
+  #- path: "dashboard.json"

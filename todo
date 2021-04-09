@@ -1,0 +1,33 @@
+- more generic makefile
+    - companion building
+    - dynamic local-activation building?
+        - based on and avaible features ???
+        - use the port from Makefile
+        - get a free port before runnig the container
+    - TODO cleanup
+
+- default.nix
+    - use dtcli (via flake!)
+    - use datasource (via flake!)
+
+- scripts
+    - move scripts into dtcli
+        - redo Makefile
+    - waht else, copy the scripts?
+
+- demo
+    - after demo works => dump manifests with a placeholder for extension name tbh
+    - instruction (erm... esentially just fill the gaps, but also explain how it works)
+
+- remote-activation.json
+
+- add templating logic!
+    - https://rclayton.silvrback.com/templatizing-github-template-repos
+    - instruction
+
+other
+    - merge extension-operator into dtcli / use a flake for it
+
+fork snmpsim
+    - fix bug with numeric
+    - use atime by default
